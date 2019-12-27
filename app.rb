@@ -78,6 +78,11 @@ class App
                 puts "New name:".green
                 new_name = gets.chomp
                 @contacts.mod_contact_name name, new_name
+                puts "Contacts:".blue
+                @contacts.contact_list
+                puts " "
+                puts "press enter to exit".cyan
+                exit = gets.chomp
             when 'n'
                 puts "Contacts:".blue
                 @contacts.contact_list
@@ -87,6 +92,11 @@ class App
                 puts "New number:".green
                 new_num = gets.chomp
                 @contacts.mod_contact_num name, new_num   
+                puts "Contacts:".blue
+                @contacts.contact_list
+                puts " "
+                puts "press enter to exit".cyan
+                exit = gets.chomp
             end    
         end
     end    
